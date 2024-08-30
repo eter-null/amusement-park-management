@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Visitors&amp;OperationManager">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Visitors&amp;OperationManager.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

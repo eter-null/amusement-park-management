@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="511.0" style="-fx-background-color: #446195;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisitorsAndOperationsManagerpkg.AdminLoginSceneController">
+   <children>
+      <Button layoutX="262.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#pressedOperationsManager" prefHeight="44.0" prefWidth="174.0" style="-fx-background-radius: 20;" text="Operations Manager">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Button>
+      <Button layoutX="286.0" layoutY="195.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="125.0" style="-fx-background-radius: 20;" text="Food Manager">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Button>
+      <Button layoutX="288.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#pressedHrManager" prefHeight="44.0" prefWidth="121.0" style="-fx-background-radius: 20;" text="HR Manager">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Button>
+      <Button layoutX="305.0" layoutY="267.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="88.0" style="-fx-background-radius: 20;" text="Engineer">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Button>
+      <Button layoutX="286.0" layoutY="338.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="125.0" style="-fx-background-radius: 20;" text="Park Manager">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Button>
+      <Button layoutX="238.0" layoutY="408.0" mnemonicParsing="false" onMouseClicked="#pressedRetailManager" prefHeight="44.0" prefWidth="225.0" style="-fx-background-radius: 20;" text="Retail Manager/Ticket Master">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Button>
+      <Button layoutX="279.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#pressedHotelManager" prefHeight="44.0" prefWidth="143.0" style="-fx-background-radius: 20;" text="Hotel Manager">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../admin.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="13.0" endY="269.0" layoutX="189.0" layoutY="220.0" startX="13.0" startY="-101.0" stroke="WHITE" />
+      <Button layoutX="389.0" layoutY="566.0" mnemonicParsing="false" onMouseClicked="#pressedGoBack" prefHeight="27.0" prefWidth="95.0" style="-fx-background-radius: 5;" text="Go Back">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

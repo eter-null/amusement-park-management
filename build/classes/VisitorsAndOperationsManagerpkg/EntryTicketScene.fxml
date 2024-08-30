@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="492.0" style="-fx-background-color: #27153B;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisitorsAndOperationsManagerpkg.EntryTicketSceneController">
+   <children>
+      <Button layoutX="191.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#pressedAddToCart" prefHeight="48.0" prefWidth="110.0" style="-fx-background-color: #27153B; -fx-border-radius: 23; -fx-border-color: white;" text="Add to Cart" textFill="#eeeded">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="82.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket(s) for Adult">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="58.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket(s) for Children">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="376.0" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#pressedGoBack" prefHeight="34.0" prefWidth="90.0" style="-fx-background-radius: 5;" text="Go Back">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="144.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy entry tickets">
+         <font>
+            <Font name="Century Gothic" size="27.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="adultEntryTicketBox" layoutX="259.0" layoutY="127.0" prefWidth="150.0" />
+      <ComboBox fx:id="childEntryTicketBox" layoutX="260.0" layoutY="227.0" prefWidth="150.0" />
+      <DatePicker fx:id="visitingDatePicker" layoutX="260.0" layoutY="318.0" />
+      <Text fill="WHITE" layoutX="120.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visiting Date">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="35.0" layoutY="504.0" mnemonicParsing="false" onMouseClicked="#pressedBuyRideTicket" prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: #27153B;" text="Ride Ticket" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <effect>
+            <Glow level="0.63">
+               <input>
+                  <DropShadow />
+               </input>
+            </Glow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

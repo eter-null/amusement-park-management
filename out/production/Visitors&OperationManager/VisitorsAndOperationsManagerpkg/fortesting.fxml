@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisitorsAndOperationsManagerpkg.FortestingController">
+   <children>
+      <Button layoutX="256.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#testthis" text="test " />
+      <TextArea fx:id="outputtest" editable="false" layoutX="164.0" layoutY="292.0" prefHeight="200.0" prefWidth="329.0" />
+      <Text fx:id="testtext" layoutX="264.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

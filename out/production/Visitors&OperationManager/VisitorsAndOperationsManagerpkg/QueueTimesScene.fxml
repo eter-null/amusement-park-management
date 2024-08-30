@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="498.0" style="-fx-background-color: #27153B;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisitorsAndOperationsManagerpkg.QueueTimesSceneController">
+   <children>
+      <Text fill="WHITE" layoutX="152.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ride Queue Time">
+         <font>
+            <Font name="Century Gothic" size="27.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="ridesComboBox" layoutX="274.0" layoutY="138.0" prefWidth="150.0" />
+      <Text fill="WHITE" layoutX="40.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a Ride to view the wait time" wrappingWidth="224.00244140625">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="346.0" layoutY="467.0" mnemonicParsing="false" onMouseClicked="#pressedGoBackToDashboard" prefHeight="34.0" prefWidth="132.0" text="Go To Dashboard">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="#eeff00" layoutX="163.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expected wait time" wrappingWidth="175.759765625">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="waitTime" fill="#eeff00" layoutX="162.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="175.759765625">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#eeff00" layoutX="214.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" wrappingWidth="72.759765625">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="183.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#pressedViewWaitTime" prefHeight="34.0" prefWidth="132.0" text="View wait time">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

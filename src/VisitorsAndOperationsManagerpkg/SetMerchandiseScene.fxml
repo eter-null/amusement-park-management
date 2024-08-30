@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="557.0" style="-fx-background-color: #446195;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisitorsAndOperationsManagerpkg.SetMerchandiseSceneController">
+   <children>
+      <Button layoutX="448.0" layoutY="609.0" mnemonicParsing="false" onMouseClicked="#pressedGoBack" prefHeight="27.0" prefWidth="95.0" style="-fx-background-radius: 5;" text="Go Back">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="170.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Merchandise">
+         <font>
+            <Font name="Gill Sans MT Bold" size="31.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="merchTypeComboBox" layoutX="279.0" layoutY="91.0" prefWidth="150.0" />
+      <TextField fx:id="merchNameTextField" layoutX="280.0" layoutY="140.0" />
+      <TextField fx:id="merchPriceTextField" layoutX="280.0" layoutY="192.0" />
+      <Text fill="WHITE" layoutX="116.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merchandise Type">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="116.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merchandise Name">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="120.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merchandise Price">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="allMerchTableView" layoutX="3.0" layoutY="298.0" prefHeight="230.0" prefWidth="557.0">
+        <columns>
+          <TableColumn fx:id="merchNameColumn" prefWidth="220.0" text="Merchandise Name" />
+          <TableColumn fx:id="merchTypeColumn" prefWidth="167.0" text="Merchandise Type" />
+            <TableColumn fx:id="merchCostColumn" prefWidth="176.0" text="Merchandise Cost" />
+        </columns>
+      </TableView>
+      <Button layoutX="196.0" layoutY="547.0" mnemonicParsing="false" onMouseClicked="#pressedChangeMerch" prefHeight="28.0" prefWidth="169.0" style="-fx-background-radius: 20;" text="Change Merchandise">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="199.0" layoutY="257.0" mnemonicParsing="false" onMouseClicked="#pressedAddMerch" prefHeight="25.0" prefWidth="162.0" style="-fx-background-radius: 20;" text="Add Merchandise">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="594.0" mnemonicParsing="false" onMouseClicked="#pressedDeleteMerch" prefHeight="30.0" prefWidth="156.0" style="-fx-background-color: #446195; -fx-border-radius: 20; -fx-border-color: white;" text="Delete Merchandise" textFill="WHITE">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Button>
+      <Text fx:id="wrongCostValue" fill="RED" layoutX="215.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entered Incorrect Cost." visible="false">
+         <font>
+            <Font name="Corbel" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

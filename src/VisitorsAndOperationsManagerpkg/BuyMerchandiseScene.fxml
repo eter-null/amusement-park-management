@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="551.0" style="-fx-background-color: #27153B;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisitorsAndOperationsManagerpkg.BuyMerchandiseSceneController">
+   <children>
+      <Text fill="WHITE" layoutX="169.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy Merchandise">
+         <font>
+            <Font name="Century Gothic" size="27.0" />
+         </font>
+      </Text>
+      <TableView fx:id="allMerchTableView" layoutX="-1.0" layoutY="68.0" prefHeight="292.0" prefWidth="551.0">
+         <columns>
+            <TableColumn fx:id="merchNameColumn" prefWidth="220.0" text="Merchandise Name" />
+            <TableColumn fx:id="merchTypeColumn" prefWidth="167.0" text="Merchandise Type" />
+            <TableColumn fx:id="merchCostColumn" prefWidth="176.0" text="Merchandise Cost" />
+         </columns>
+      </TableView>
+      <Button layoutX="437.0" layoutY="556.0" mnemonicParsing="false" onMouseClicked="#pressedGoBack" prefHeight="33.0" prefWidth="89.0" style="-fx-background-radius: 10;" text="Go Back">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="227.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#pressedAddToCart" prefHeight="48.0" prefWidth="110.0" style="-fx-background-color: #27153B; -fx-border-radius: 23; -fx-border-color: white;" text="Add to Cart" textFill="#eeeded">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="merchQuantityComboBox" layoutX="255.0" layoutY="386.0" prefWidth="150.0" />
+      <Text fill="WHITE" layoutX="146.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="quantityNotSelected" fill="RED" layoutX="214.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Must select quantity" visible="false">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
