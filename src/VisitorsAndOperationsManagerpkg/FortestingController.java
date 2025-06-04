@@ -20,6 +20,9 @@ import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
 /**
  * FXML Controller class
  *
@@ -52,39 +55,71 @@ public class FortestingController implements Initializable {
 
 
 
-    }    
+    }
 
     @FXML
     private void testthis(MouseEvent event) {
         outputtest.setText(null);
-        File f = null;
-        FileInputStream fis = null;
-        ObjectInputStream ois = null;
 
-        try {
-            f = new File("TableObjs.bin");
-            fis = new FileInputStream(f);
-            ois = new ObjectInputStream(fis);
-            Table r;
-            try{
-                outputtest.setText(null);
-                while(true){
-                    r = (Table)ois.readObject();
-                    //Object obj = ois.readObject();
-                    //obj.submitReport();
-                    outputtest.appendText(r.toString() + "\n");
+        // Step 1: Read existing users from the file
+        ArrayList<Visitors> existingUsers = new ArrayList<>();
+        File f = new File("D:\\IUB\\6th Semester\\csc305\\Group Project\\Prototype\\Visitors&OperationManager\\VisitorsObjs.bin");
+
+        if (f.exists()) {
+            try (FileInputStream fis = new FileInputStream(f);
+                 ObjectInputStream ois = new ObjectInputStream(fis)) {
+
+                while (true) {
+                    try {
+                        Visitors user = (Visitors) ois.readObject();
+                        existingUsers.add(user);
+                    } catch (Exception e) {
+                        break; // End of file reached
+                    }
                 }
-            }//end of nested try
-            catch(Exception e){
-                //
-            }//nested catch
-        } catch (IOException ex) { }
-        finally {
-            try {
-                if(ois != null) ois.close();
-            } catch (IOException ex) { }
+            } catch (IOException ex) {
+                outputtest.appendText("Error reading file: " + ex.getMessage() + "\n");
+            }
         }
 
+        // Step 2: Create a new user
+        ArrayList<Object> emptyCartList = new ArrayList<>(); // Create empty ArrayList for cart
+        Cart newCart = new Cart(emptyCartList); // Create cart with empty ArrayList
+        LocalDate birthDate = LocalDate.of(2003, 2, 8); // February 8th, 2003
+
+        Visitors newUser = new Visitors(
+                "Mehzabeen",                    // firstName
+                "Nisa",                  // lastName
+                "nisa123",                 // userId
+                "nisa123@gmail.com",       // email
+                "nisa123",                 // password
+                birthDate,                  // dateOfBirth
+                "Female",                   // gender
+                newCart                     // itemsCart
+        );
+
+        // Step 3: Add new user to the list
+        existingUsers.add(newUser);
+
+        // Step 4: Write all users back to the file
+        try (FileOutputStream fos = new FileOutputStream(f);
+             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+
+            for (Visitors user : existingUsers) {
+                oos.writeObject(user);
+            }
+            outputtest.appendText("New user added successfully!\n");
+
+        } catch (IOException ex) {
+            outputtest.appendText("Error writing to file: " + ex.getMessage() + "\n");
+        }
+
+        // Step 5: Display all users to verify
+        outputtest.appendText("\nAll users in the file:\n");
+        for (Visitors user : existingUsers) {
+            outputtest.appendText("User: " + user.getFirstName() + " " + user.getLastName() +
+                    " (" + user.getEmail() + ")\n");
+        }
     }
     
 }
