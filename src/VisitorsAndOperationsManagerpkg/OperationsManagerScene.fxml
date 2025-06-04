@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="573.0" style="-fx-background-color: #446195;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VisitorsAndOperationsManagerpkg.OperationsManagerSceneController">
    <children>
-      <Text fill="#000003" layoutX="79.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NeoLand Operations Manager">
+      <Text fill="#000003" layoutX="79.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BuchiLand Operations Manager">
          <font>
             <Font name="Gill Sans MT Bold" size="31.0" />
          </font>

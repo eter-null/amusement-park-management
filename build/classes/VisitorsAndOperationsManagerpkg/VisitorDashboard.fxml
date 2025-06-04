@@ -82,7 +82,7 @@
             </Glow>
          </effect>
       </Button>
-      <Text fill="WHITE" layoutX="24.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to NeoLand!" wrappingWidth="280.13671875">
+      <Text fill="WHITE" layoutX="24.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to BuchiLand!" wrappingWidth="280.13671875">
          <font>
             <Font name="Cooper Black" size="48.0" />
          </font>
@@ -92,7 +92,7 @@
             <Font name="Century Gothic" size="13.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="388.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Breathtaking Memories To Last For A Lifetime At NeoLand" wrappingWidth="217.13671875">
+      <Text fill="WHITE" layoutX="388.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Breathtaking Memories To Last For A Lifetime At BuchiLand" wrappingWidth="217.13671875">
          <font>
             <Font name="Consolas Bold" size="29.0" />
          </font>
