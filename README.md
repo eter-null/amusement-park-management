@@ -11,16 +11,14 @@ A simulation-based Java project for managing operations in an amusement park, de
 - Table booking & Hotel reservations
 - Real-time merchandise cart with inventory updates
 ### 🎥 Visitor Demo
-[![Visitors Demo](https://img.youtube.com/vi/0u1YDlMf9E8/0.jpg)](https://youtu.be/0u1YDlMf9E8)
+[![Visitors Demo](https://img.youtube.com/vi/0u1YDlMf9E8/maxresdefault.jpg)](https://youtu.be/0u1YDlMf9E8)
 
 ### 🧑‍💼 Operations Manager (Admin) Side
 - Add/removechange merchandise or change existing ones
 - Inventory management
 - Basic operation dashboard
 ### 🎥 Operations Manager  Demo
-[![Operations Manager Demo](https://img.youtube.com/vi/7ax3i-tyYjQ/0.jpg)](https://youtu.be/7ax3i-tyYjQ)
-https://youtu.be/7ax3i-tyYjQ
-https://youtu.be/0u1YDlMf9E8
+[![Operations Manager Demo](https://img.youtube.com/vi/7ax3i-tyYjQ/maxresdefault.jpg)](https://youtu.be/7ax3i-tyYjQ)
 
 ## 🛠️ Tools Used
 
