@@ -1,6 +1,6 @@
 # Amusement Park Management System 🎢
 
-A simulation-based Java project for managing operations in an amusement park, developed as part of a university group assignment. The system includes functionalities for both visitors and park operation managers, with features like login, ticketing, a merchandise cart system, and an admin interface.
+A simulation-based Java project for managing operations in an amusement park, developed as part of my university's Autumn'22 semester course, Object-Oriented Programming (OOP) to demonstrate OOP principles and user interface design. The system includes functionalities for both visitors and park operation managers, with features like login, ticketing, a auto-updating merchandise cart system, and an admin interface.
 
 ## 📌 Features
 
@@ -8,18 +8,26 @@ A simulation-based Java project for managing operations in an amusement park, de
 - Login system
 - Ticket purchasing
 - Booking ride options
+- Table booking & Hotel reservations
 - Real-time merchandise cart with inventory updates
+### 🎥 Visitor Demo
+[![Visitors Demo](https://img.youtube.com/vi/0u1YDlMf9E8/0.jpg)](https://youtu.be/0u1YDlMf9E8)
 
 ### 🧑‍💼 Operations Manager (Admin) Side
-- Admin login
-- Add/remove merchandise
+- Add/removechange merchandise or change existing ones
 - Inventory management
 - Basic operation dashboard
+### 🎥 Operations Manager  Demo
+[![Operations Manager Demo](https://img.youtube.com/vi/7ax3i-tyYjQ/0.jpg)](https://youtu.be/7ax3i-tyYjQ)
+https://youtu.be/7ax3i-tyYjQ
+https://youtu.be/0u1YDlMf9E8
 
-## 🛠️ Technologies Used
+## 🛠️ Tools Used
 
 - **Language:** Java
-- **IDE:** IntelliJ / NetBeans (choose what you used)
+- **Framework:** JavaFX
+- **IDE:** IntelliJ IDEA
+- **UI Design Tool:** Scene Builder (for FXML layouts)
 - **Version Control:** Git & GitHub
 
 ## 🚀 Getting Started
