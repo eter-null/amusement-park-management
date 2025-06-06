@@ -3,6 +3,7 @@
 A simulation-based Java project for managing operations in an amusement park, developed as part of my university's Autumn'22 semester course, Object-Oriented Programming (OOP) to demonstrate OOP principles and user interface design. The system includes functionalities for both visitors and park operation managers, with features like login, ticketing, a auto-updating merchandise cart system, and an admin interface.
 
 ![Screenshot 1](Home_Screen.png)
+
 *Main Home Screen*
 
 ## 📌 Features
